@@ -8,17 +8,6 @@ import time
 
 
 
-# this test function checks to see if there exists any factors between 1 and num not inclusive. If so, then num is not prime.
-def is_prime_alt(num):
-
-    # we are looking to see if there are any factors other than 1 and num, if so then not prime
-    for i in range( 2, num):
-        if num%i == 0:
-            return False
-
-    return True
-
-
 # this function checks for factors by dividing down the original number by each factor it finds 
 def largest_prime_factor(num):
 
@@ -28,7 +17,7 @@ def largest_prime_factor(num):
     # loop until we reduce num to it's smallest factor, one
     while num > 1:
 
-        # if factor is a factor
+        # if i is a factor
         if num % i == 0:
 
             # update our highest confirmed factor
